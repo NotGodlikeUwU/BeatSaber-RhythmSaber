@@ -4,9 +4,6 @@ WARNING: This mod does NOT WORK with ScoreSaber/BeatLeader installed. Please dis
 
 An experimental mod that changes Beat Saber's scoring logic to OSU/DJMax-like timing scores based on music rhythm, a white judgement beam and flying hit grades. This repository contains two separate version of this mod, both PC and Quest versions. Made with the help of ChatGPT 6.1
 
-
-
-
 ## Features
 
 - Replaces the entire Beat Saber accuracy scoring formula with musical timing. Now you don't need to hit precisely at the center of the block to get full 115 - just do it at the right timing
