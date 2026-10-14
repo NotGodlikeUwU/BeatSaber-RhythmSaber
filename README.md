@@ -1,4 +1,4 @@
-# RhythmSaber 0.1 — Beat Saber 1.40.8 for Quest and PC
+# RhythmSaber 0.1 — Osu-like scoring system mod for Beat Saber 1.40.8 Quest/PC
 
 WARNING: This mod does NOT WORK with ScoreSaber/BeatLeader installed. Please disable these mods to play RhythmSaber
 
