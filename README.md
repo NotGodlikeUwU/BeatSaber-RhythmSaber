@@ -1,7 +1,7 @@
 <img width="1254" height="1254" alt="Без названия34_20261014120646" src="https://github.com/user-attachments/assets/1a9835f9-c2a0-4ae0-a739-331495f54ecd" />
 
 
-# RhythmSaber 0.1 — OsuMania-like scoring system mod for Beat Saber 1.40.8 Quest/PC
+# RhythmSaber — OsuMania-like scoring system mod for Beat Saber 1.40.8 Quest/PC
 
 WARNING: This mod does NOT WORK with ScoreSaber/BeatLeader installed. Please disable these mods to play RhythmSaber
 
@@ -32,8 +32,8 @@ All five windows and point values are configurable in Mod Settings and config-ut
 
 ## Installation
 
-QUEST: download .qmod from Release and install it with BMBF/QuestPatcher.
-PC: download the .zip file and install it using BSManager or manually extract the contents to Beat Saber/BeatSaber_data/plugins
+QUEST: download [RhythmSaber 0.1.1](https://github.com/NotGodlikeUwU/RhythmSaber/releases/tag/v0.1.1) and import the .qmod with ModsBeforeFriday (MBF) or QuestPatcher. Its manifest uses full SemVer 0.1.1 and caret runtime dependency ranges, allowing compatible dependency updates.
+PC: download the .zip file from the [0.1 release](https://github.com/NotGodlikeUwU/RhythmSaber/releases/tag/v0.1) and install it using BSManager or extract it beside Beat Saber.exe, so the DLL is in Plugins/RhythmSaber.dll. PC remains version 0.1.0.
 
 ## Build on Windows
 
@@ -47,7 +47,7 @@ pwsh scripts/package.ps1 -SkipBuild
 pwsh scripts/source-archive.ps1
 ```
 
-Pass your own `-Ndk` path or remove local `ndkpath.txt` on another machine; it is excluded from source archives. Exact dependencies: bs-cordl 4008.0.0, beatsaber-hook 6.4.2, custom-types 0.18.4, config-utils 2.0.3, BSML 0.4.55, paper2_scotland2 4.8.0, Scotland2 0.1.7, MetaCore 1.6.3. Do not replace codegen with the latest game version. `qpm.shared.json` locks dependencies. The installer supplies Scotland2; its loader library is not bundled.
+Pass your own `-Ndk` path or remove local `ndkpath.txt` on another machine; it is excluded from source archives. Exact build dependencies: bs-cordl 4008.0.0, beatsaber-hook 6.4.2, custom-types 0.18.4, config-utils 2.0.3, BSML 0.4.55, paper2_scotland2 4.8.0, Scotland2 0.1.7, MetaCore 1.6.3. Do not replace codegen with the latest game version. `qpm.shared.json` locks dependencies. The installer supplies Scotland2; its loader library is not bundled.
 
 For Git schannel `SEC_E_NO_CREDENTIALS`, use a working Git for Windows install and temporarily select `http.sslBackend=openssl` for QPM restore. For git-submodule failures check Git's `usr/bin` availability. Do not copy libraries from a different game version.
 
@@ -62,3 +62,7 @@ adb pull /sdcard/ModData/com.beatgames.beatsaber/Configs/rhythmsaber.json
 ```
 
 Enable Timing diagnostics. Logs include native scoring type, actual/expected times, signed plane distance, score, estimate flag and frame song-time interval. Debug symbols must match the installed build: `build/librhythmsaber.debug.so`.
+
+Quest 0.1.1 changes installation metadata only; gameplay and ranking protection are unchanged. QPM/codegen/NDK build pins remain fixed, while mod.template.json declares caret ranges for the runtime QMOD dependencies. The package verifier checks mod.json inside the final archive against MBF's vendored schema.
+
+[Quest technical instructions](docs/QUEST.md) | [PC instructions](PC/README.md) | [Quest 0.1.1 release notes](docs/RELEASE-0.1.1.md)

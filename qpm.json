@@ -3,13 +3,13 @@
   "version": "0.4.0",
   "sharedDir": "shared",
   "dependenciesDir": "extern",
-  "info": { "name": "RhythmSaber", "id": "rhythmsaber", "version": "0.1.0", "url": "https://github.com/NotGodlikeUwU/RhythmSaber",
+  "info": { "name": "RhythmSaber", "id": "rhythmsaber", "version": "0.1.1", "url": "https://github.com/NotGodlikeUwU/RhythmSaber",
     "additionalData": { "overrideSoName": "librhythmsaber.so", "cmake": true } },
   "workspace": {
     "ndk": "=27.3.13750724",
     "scripts": { "build": ["pwsh ./scripts/build.ps1"], "qmod": ["pwsh ./scripts/package.ps1"], "test": ["pwsh ./scripts/test.ps1"] },
     "qmodIncludeDirs": ["./build", "./extern/libs"], "qmodIncludeFiles": ["./LICENSE", "./THIRD_PARTY_NOTICES.md", "./third_party/beatsaber-hook-LICENSE.txt", "./third_party/And64InlineHook-LICENSE.txt", "./third_party/custom-types-LICENSE.txt", "./third_party/config-utils-LICENSE.txt", "./third_party/scotland2-LICENSE.txt", "./third_party/fmt-LICENSE.txt", "./third_party/quest-mod-template-UNLICENSE.txt"],
-    "qmodOutput": "./dist/RhythmSaber-0.1.0.qmod"
+    "qmodOutput": "./dist/RhythmSaber-0.1.1.qmod"
   },
   "dependencies": [
     { "id": "beatsaber-hook", "versionRange": "=6.4.2", "additionalData": {} },

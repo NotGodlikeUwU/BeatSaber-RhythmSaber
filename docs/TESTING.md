@@ -1,5 +1,11 @@
 # Quest gameplay test plan
 
+## Quest 0.1.1 package installation regression
+
+After packaging, run `pwsh tests/package_tests.ps1`. It reads the real QMOD and verifies acceptance by MBF's unchanged schema, then creates isolated copies with version 0.1 and an exact dependency requirement; both must be rejected for the intended reason. Repeat normal `pwsh scripts/package.ps1 -SkipBuild`: QPM ZIP regeneration must retain all five caret requirements from mod.template.json.
+
+On a connected Quest, import 0.1.1 through MBF over public 0.1.0, with baseline dependencies and then installed compatible newer versions. Dependencies satisfying the declared caret ranges must not be downgraded; missing dependencies may use their existing downloadIfMissing URLs. Confirm game launch and the existing timing/guard scenarios. This device test remains pending; host schema validation is not a live install.
+
 Historical sections retain the original version-specific numbers and restrictions. They do not override current README behavior.
 
 ## Current 0.2.2/0.2.3 display checks

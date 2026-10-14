@@ -8,6 +8,8 @@ try {
   New-Item -ItemType Directory -Force dist | Out-Null
   & $Qpm qmod manifest --offline
   if($LASTEXITCODE -ne 0) { throw 'QMOD manifest generation failed' }
+  $taskManifestJson=Get-Content mod.json -Raw
+  if(-not ($taskManifestJson | Test-Json -SchemaFile (Join-Path $taskRoot 'schemas/qmod.schema.json') -ErrorAction Stop)) { throw 'Generated QMOD manifest schema validation failed' }
   & $Qpm qmod zip --skip_build --offline
   if($LASTEXITCODE -ne 0) { throw 'QMOD packaging failed' }
   & (Join-Path $PSScriptRoot 'verify-package.ps1')

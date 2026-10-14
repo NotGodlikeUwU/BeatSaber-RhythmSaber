@@ -20,3 +20,4 @@ research repositories are not redistributed in the source archive.
 - BSML: https://github.com/bsq-ports/Quest-BSML
 - MetaCore: https://github.com/Metalit/MetaCore
 - quest-mod-template: https://github.com/Lauriethefish/quest-mod-template
+- QMOD validation schema: the unmodified schema embedded by ModsBeforeFriday, originally from QuestPatcher.QMod. Provenance and the original zlib license are retained in schemas/README.md and schemas/QuestPatcher.QMod-LICENSE.txt.

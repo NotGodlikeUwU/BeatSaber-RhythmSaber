@@ -7,7 +7,7 @@
     "info": {
       "name": "RhythmSaber",
       "id": "rhythmsaber",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "url": "https://github.com/NotGodlikeUwU/RhythmSaber",
       "additionalData": {
         "overrideSoName": "librhythmsaber.so",
@@ -42,7 +42,7 @@
         "./third_party/fmt-LICENSE.txt",
         "./third_party/quest-mod-template-UNLICENSE.txt"
       ],
-      "qmodOutput": "./dist/RhythmSaber-0.1.0.qmod"
+      "qmodOutput": "./dist/RhythmSaber-0.1.1.qmod"
     },
     "dependencies": [
       {

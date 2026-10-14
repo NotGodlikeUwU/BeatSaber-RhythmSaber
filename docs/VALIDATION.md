@@ -1,5 +1,13 @@
 # Validation history
 
+## Quest 0.1.1 — 15 October 2026: MBF packaging fix
+
+Full SemVer 0.1.1, with caret runtime requirements declared in mod.template.json; exact compiler/codegen/NDK pins are unchanged. QPM manifest generation and QPM ZIP regeneration both preserve the five caret entries. The actual QMOD passes the unchanged schema embedded by MBF at commit 2d6f84a9f9c9d5a5723866de9c8ea0dfb20b37d4, dependency-template checks, ELF64/AArch64 and packaged/build SHA256 equality.
+
+172 existing timing/guard/feedback checks passed, and ARM64 --no-undefined compilation/link completed with existing dependency-header warnings. Three package regression checks passed: valid archive accepted; version 0.1 rejected at /version; exact dependency rejected. PC 0.1.0 DLL is unchanged, SHA256 B6BC2B53E0728003C80A8C735D121FBDC2A464C25D55CD9A5B8A3200AE7A595B.
+
+Logs: tests-011-mbf.log, build-011-mbf.log, package-011-mbf.log and package-regressions-011.log. adb devices reports the Quest offline; a live MBF installation has not been performed. Updated dependency compatibility outside SemVer guarantees and the existing gameplay/network matrix are not claimed as tested.
+
 ## Public 0.1 (manifest 0.1.0) — 14 October 2026
 
 This is the latest implementation renumbered for publication, not the initial historical 0.1.0 prototype. Quest passed 172 host checks and ARM64 compilation/link with --no-undefined; dependency-header warnings remain. QMOD metadata/dependencies/ELF/build hash and official QMOD/QPM/lock schema checks passed. PC compiled with zero errors/warnings; 429 timing/config/trajectory/feedback, 112 ABI/resource and 482 real managed scoring checks passed. Its embedded manifest and assembly use 0.1.0.

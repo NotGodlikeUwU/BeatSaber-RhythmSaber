@@ -8,7 +8,7 @@ if(Test-Path -LiteralPath $taskArchive) { Remove-Item -LiteralPath $taskArchive 
 $taskZip=[IO.Compression.ZipFile]::Open($taskArchive,[IO.Compression.ZipArchiveMode]::Create)
 try {
   $taskFiles=@('CMakeLists.txt','qpm.json','qpm.shared.json','mod.template.json','.gitignore','README.md','LICENSE','THIRD_PARTY_NOTICES.md') | ForEach-Object { Get-Item (Join-Path $taskRoot $_) }
-  foreach($taskDir in @('include','src','cmake','scripts','tests','docs','shared','third_party')) { $taskFiles+=Get-ChildItem (Join-Path $taskRoot $taskDir) -File -Recurse }
+  foreach($taskDir in @('include','src','cmake','scripts','tests','docs','shared','third_party','schemas')) { $taskFiles+=Get-ChildItem (Join-Path $taskRoot $taskDir) -File -Recurse }
   foreach($taskFile in $taskFiles) {
     $taskRelative=[IO.Path]::GetRelativePath($taskRoot,$taskFile.FullName).Replace('\','/')
     [IO.Compression.ZipFileExtensions]::CreateEntryFromFile($taskZip,$taskFile.FullName,$taskRelative,[IO.Compression.CompressionLevel]::Optimal) | Out-Null
