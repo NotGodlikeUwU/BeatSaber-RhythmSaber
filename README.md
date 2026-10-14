@@ -1,8 +1,8 @@
-# RhythmSaber 0.1 — Osu-like scoring system mod for Beat Saber 1.40.8 Quest/PC
+# RhythmSaber 0.1 — OsuMania-like scoring system mod for Beat Saber 1.40.8 Quest/PC
 
 WARNING: This mod does NOT WORK with ScoreSaber/BeatLeader installed. Please disable these mods to play RhythmSaber
 
-An experimental mod that changes Beat Saber's scoring logic to OSU/DJMax-like timing scores based on music rhythm, a white judgement beam and flying hit grades. This repository contains two separate version of this mod, both PC and Quest versions. Made with the help of ChatGPT 6.1
+An experimental mod that changes Beat Saber's scoring logic to OsuMania/DJMax-like timing scores based on music rhythm, a white judgement beam and flying hit grades. This repository contains two separate version of this mod, both PC and Quest versions. Made with the help of ChatGPT 6.1
 
 <img width="1080" height="1106" alt="IMG_20261014_103132" src="https://github.com/user-attachments/assets/68f9137f-25a3-4db1-a452-65d990f599af" />
 
