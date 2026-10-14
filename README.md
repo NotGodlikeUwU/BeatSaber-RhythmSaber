@@ -4,7 +4,7 @@ WARNING: This mod does NOT WORK with ScoreSaber/BeatLeader installed. Please dis
 
 An experimental mod that changes Beat Saber's scoring logic to OsuMania/DJMax-like timing scores based on music rhythm and hit timing, judgement line and POOR-PERFECT grades. This repository contains both PC and Quest versions. Made with the help of ChatGPT 6.1
 
-<img width="1080" height="1106" alt="IMG_20261014_103132" src="https://github.com/user-attachments/assets/68f9137f-25a3-4db1-a452-65d990f599af" />
+https://github.com/user-attachments/assets/35eaf909-7946-42c6-b888-765947f9abf8
 
 ## Features
 
