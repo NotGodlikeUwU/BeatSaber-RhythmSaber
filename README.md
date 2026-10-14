@@ -6,7 +6,6 @@ An experimental mod that changes Beat Saber's scoring logic to OsuMania/DJMax-li
 
 <img width="1080" height="1106" alt="IMG_20261014_103132" src="https://github.com/user-attachments/assets/68f9137f-25a3-4db1-a452-65d990f599af" />
 
-
 ## Features
 
 - Replaces the entire Beat Saber accuracy scoring formula with musical timing. Now you don't need to hit precisely at the center of the block to get full 115 - just do it at the right timing
