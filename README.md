@@ -1,3 +1,6 @@
+<img width="1254" height="1254" alt="Без названия34_20261014120646" src="https://github.com/user-attachments/assets/1a9835f9-c2a0-4ae0-a739-331495f54ecd" />
+
+
 # RhythmSaber 0.1 — OsuMania-like scoring system mod for Beat Saber 1.40.8 Quest/PC
 
 WARNING: This mod does NOT WORK with ScoreSaber/BeatLeader installed. Please disable these mods to play RhythmSaber
