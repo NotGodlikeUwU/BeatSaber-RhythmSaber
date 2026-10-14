@@ -11,7 +11,7 @@ An experimental mod that changes Beat Saber's scoring logic to OsuMania/DJMax-li
 - Replaces the entire Beat Saber accuracy scoring formula with musical timing. Now you don't need to hit precisely at the center of the block to get full 115 - just do it at the right timing
 - Fully configurable scores and timings.
 - Displays a colored grade (POOR/BAD/GOOD/GREAT/PERFECT), which also shows you how fast/slow you were in milliseconds.
-- One white judgemental line (fully configurable position, size and color)
+- One judgemental line that determines how fast/slow you were been (fully configurable position, size and color)
 - Noodle Extensions, Mapping Extensions, Cinema and Chroma support. Vivify is not tested.
 - block color, direction, accepted-cut speed, bad cuts, misses, bombs, walls, combo and multipliers remain vanilla.
 
