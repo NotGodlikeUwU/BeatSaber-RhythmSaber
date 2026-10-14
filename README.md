@@ -4,6 +4,7 @@ WARNING: This mod does NOT WORK with ScoreSaber/BeatLeader installed. Please dis
 
 An experimental mod that changes Beat Saber's scoring logic to OSU/DJMax-like timing scores based on music rhythm, a white judgement beam and flying hit grades. This repository contains two separate version of this mod, both PC and Quest versions.
 
+https://github.com/NotGodlikeUwU/RhythmSaber/blob/7139f3e44c773385767d997f1891f2384894c56b/VID_20261014103344-ezgif.com-optimize.gif
 
 ## Features
 
