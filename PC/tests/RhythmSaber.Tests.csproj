@@ -1,0 +1,4 @@
+<Project Sdk="Microsoft.NET.Sdk">
+ <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net472</TargetFramework><LangVersion>9.0</LangVersion><AutomaticallyUseReferenceAssemblyPackages>false</AutomaticallyUseReferenceAssemblyPackages></PropertyGroup>
+ <ItemGroup><Compile Include="..\src\TimingScoring.cs" Link="TimingScoring.cs"/><Compile Include="..\src\PluginConfig.cs" Link="PluginConfig.cs"/><Compile Include="..\src\FeedbackPresentation.cs" Link="FeedbackPresentation.cs"/></ItemGroup>
+</Project>

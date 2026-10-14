@@ -1,0 +1,8 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Lauriethefish/QuestPatcher.QMod/main/QuestPatcher.QMod/Resources/qmod.schema.json",
+  "_QPVersion": "0.1.1", "name": "${mod_name}", "id": "${mod_id}", "version": "${version}",
+  "author": "RhythmSaber contributors", "packageId": "com.beatgames.beatsaber", "packageVersion": "1.40.8_7379",
+  "description": "Rhythm-based timing scores, a white judgement beam and flying hit grades. Online score submission is disabled during RhythmSaber play. Headset validation is required for each release.",
+  "modloader": "Scotland2", "dependencies": [], "modFiles": [], "lateModFiles": ["${binary}"],
+  "libraryFiles": [], "fileCopies": []
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://raw.githubusercontent.com/QuestPackageManager/QPM.Package/refs/heads/main/qpm.schema.json",
+  "version": "0.4.0",
+  "sharedDir": "shared",
+  "dependenciesDir": "extern",
+  "info": { "name": "RhythmSaber", "id": "rhythmsaber", "version": "0.1.0", "url": "https://github.com/NotGodlikeUwU/RhythmSaber",
+    "additionalData": { "overrideSoName": "librhythmsaber.so", "cmake": true } },
+  "workspace": {
+    "ndk": "=27.3.13750724",
+    "scripts": { "build": ["pwsh ./scripts/build.ps1"], "qmod": ["pwsh ./scripts/package.ps1"], "test": ["pwsh ./scripts/test.ps1"] },
+    "qmodIncludeDirs": ["./build", "./extern/libs"], "qmodIncludeFiles": ["./LICENSE", "./THIRD_PARTY_NOTICES.md", "./third_party/beatsaber-hook-LICENSE.txt", "./third_party/And64InlineHook-LICENSE.txt", "./third_party/custom-types-LICENSE.txt", "./third_party/config-utils-LICENSE.txt", "./third_party/scotland2-LICENSE.txt", "./third_party/fmt-LICENSE.txt", "./third_party/quest-mod-template-UNLICENSE.txt"],
+    "qmodOutput": "./dist/RhythmSaber-0.1.0.qmod"
+  },
+  "dependencies": [
+    { "id": "beatsaber-hook", "versionRange": "=6.4.2", "additionalData": {} },
+    { "id": "bs-cordl", "versionRange": "=4008.0.0", "additionalData": {} },
+    { "id": "config-utils", "versionRange": "=2.0.3", "additionalData": {} },
+    { "id": "custom-types", "versionRange": "=0.18.4", "additionalData": {} },
+    { "id": "paper2_scotland2", "versionRange": "=4.8.0", "additionalData": {} },
+    { "id": "scotland2", "versionRange": "=0.1.7", "additionalData": { "includeQmod": false } },
+    { "id": "bsml", "versionRange": "=0.4.55", "additionalData": {} },
+    { "id": "metacore", "versionRange": "=1.6.3", "additionalData": {} }
+  ]
+}

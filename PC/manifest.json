@@ -1,0 +1,8 @@
+{
+  "$schema": "https://raw.githubusercontent.com/beat-saber-modding-group/BSIPA-MetadataFileSchema/master/Schema.json",
+  "id": "RhythmSaber", "name": "RhythmSaber", "author": "RhythmSaber",
+  "version": "0.1.0", "gameVersion": "1.40.8",
+  "description": "Rhythm-based timing scores, a white judgement beam and flying hit grades. Online score submission is disabled during RhythmSaber play.",
+  "dependsOn": { "BSIPA": "^4.3.4", "BeatSaberMarkupLanguage": "^1.12.5", "SiraUtil": "^3.1.11", "BS Utils": "^1.14.2" },
+  "links": { "project-home": "https://github.com/NotGodlikeUwU/RhythmSaber", "project-source": "https://github.com/NotGodlikeUwU/RhythmSaber" }
+}

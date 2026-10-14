@@ -1,0 +1,1 @@
+Rhythm-based timing scores with a white judgement beam and flying hit grades. Local play only.

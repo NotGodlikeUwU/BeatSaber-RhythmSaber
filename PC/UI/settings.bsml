@@ -1,0 +1,50 @@
+<bg id="settings-root" anchor-min="0 0" anchor-max="1 1" size-delta="0 0" anchored-position="0 0" horizontal-fit="Unconstrained" vertical-fit="Unconstrained">
+<text id="status-label" text="" font-size="3" word-wrapping="true" anchor-min="0 1" anchor-max="1 1" pivot="0.5 1" anchored-position="0 0" size-delta="0 5"/>
+<tab-selector id="settings-tabs" tab-tag="tabs" anchor-min="0 1" anchor-max="1 1" pivot="0.5 1" anchored-position="0 -6" size-delta="0 7" child-expand-width="true" child-control-width="true" horizontal-fit="Unconstrained" vertical-fit="Unconstrained"/>
+<bg id="settings-pages" anchor-min="0 0" anchor-max="1 1" size-delta="0 -22" anchored-position="0 -3" horizontal-fit="Unconstrained" vertical-fit="Unconstrained">
+<tab tags="tabs" tab-name="General" anchor-min="0 0" anchor-max="1 1" size-delta="0 0" anchored-position="0 0" horizontal-fit="Unconstrained" vertical-fit="Unconstrained">
+<scrollable-settings-container>
+<bool-setting text="Enable RhythmSaber" value="Enabled" apply-on-change="true"/>
+<bool-setting text="Show Judgement Line" value="ShowLine" apply-on-change="true"/>
+<bool-setting text="Show Timing Judgements" value="ShowJudgements" apply-on-change="true"/>
+<bool-setting text="Show milliseconds (off: EARLY/LATE)" value="ShowOffset" apply-on-change="true"/>
+<bool-setting text="Show Timing Statistics" value="ShowStatistics" apply-on-change="true"/>
+<bool-setting text="Diagnostic logging" value="Diagnostics" apply-on-change="true"/>
+<increment-setting text="Flying judgement size" value="TextSize" min="0.25" max="3" increment="0.05" integer-only="false" apply-on-change="true"/>
+</scrollable-settings-container>
+</tab>
+<tab tags="tabs" tab-name="Beam" anchor-min="0 0" anchor-max="1 1" size-delta="0 0" anchored-position="0 0" horizontal-fit="Unconstrained" vertical-fit="Unconstrained">
+<scrollable-settings-container>
+<increment-setting text="Beam distance (m)" value="LineDistance" min="-0.5" max="5" increment="0.05" integer-only="false" apply-on-change="true"/>
+<increment-setting text="Beam height (m)" value="LineHeight" min="0.1" max="3" increment="0.05" integer-only="false" apply-on-change="true"/>
+<increment-setting text="Beam width (m)" value="LineWidth" min="0.5" max="10" increment="0.1" integer-only="false" apply-on-change="true"/>
+<increment-setting text="Line thickness (m)" value="LineThickness" min="0.001" max="0.1" increment="0.001" integer-only="false" apply-on-change="true"/>
+<increment-setting text="Line brightness" value="LineBrightness" min="0" max="3" increment="0.1" integer-only="false" apply-on-change="true"/>
+<increment-setting text="Line opacity" value="LineOpacity" min="0" max="1" increment="0.05" integer-only="false" apply-on-change="true"/>
+<increment-setting text="Line Red" value="LineRed" min="0" max="1" increment="0.05" integer-only="false" apply-on-change="true"/>
+<increment-setting text="Line Green" value="LineGreen" min="0" max="1" increment="0.05" integer-only="false" apply-on-change="true"/>
+<increment-setting text="Line Blue" value="LineBlue" min="0" max="1" increment="0.05" integer-only="false" apply-on-change="true"/>
+</scrollable-settings-container>
+</tab>
+<tab tags="tabs" tab-name="Timing" anchor-min="0 0" anchor-max="1 1" size-delta="0 0" anchored-position="0 0" horizontal-fit="Unconstrained" vertical-fit="Unconstrained">
+<scrollable-settings-container>
+<increment-setting text="Timing offset (ms)" value="TimingOffset" min="-500" max="500" increment="1" integer-only="false" apply-on-change="true"/>
+<increment-setting text="Perfect Window (ms)" value="PerfectWindow" min="1" max="250" increment="1" integer-only="false" apply-on-change="true"/>
+<increment-setting text="Great Window (ms)" value="GreatWindow" min="1" max="250" increment="1" integer-only="false" apply-on-change="true"/>
+<increment-setting text="Good Window (ms)" value="GoodWindow" min="1" max="250" increment="1" integer-only="false" apply-on-change="true"/>
+<increment-setting text="Bad Window (ms)" value="BadWindow" min="1" max="250" increment="1" integer-only="false" apply-on-change="true"/>
+<increment-setting text="Poor Window (ms)" value="PoorWindow" min="1" max="250" increment="1" integer-only="false" apply-on-change="true"/>
+</scrollable-settings-container>
+</tab>
+<tab tags="tabs" tab-name="Points" anchor-min="0 0" anchor-max="1 1" size-delta="0 0" anchored-position="0 0" horizontal-fit="Unconstrained" vertical-fit="Unconstrained">
+<scrollable-settings-container>
+<increment-setting text="Perfect Points" value="PerfectPoints" min="0" max="115" increment="1" integer-only="true" apply-on-change="true"/>
+<increment-setting text="Great Points" value="GreatPoints" min="0" max="115" increment="1" integer-only="true" apply-on-change="true"/>
+<increment-setting text="Good Points" value="GoodPoints" min="0" max="115" increment="1" integer-only="true" apply-on-change="true"/>
+<increment-setting text="Bad Points" value="BadPoints" min="0" max="115" increment="1" integer-only="true" apply-on-change="true"/>
+<increment-setting text="Poor Points" value="PoorPoints" min="0" max="115" increment="1" integer-only="true" apply-on-change="true"/>
+</scrollable-settings-container>
+</tab>
+</bg>
+<button text="Reset defaults (reopen menu to refresh)" on-click="reset" anchor-min="0 0" anchor-max="1 0" pivot="0.5 0" anchored-position="0 1" size-delta="0 6" horizontal-fit="Unconstrained" vertical-fit="Unconstrained"/>
+</bg>

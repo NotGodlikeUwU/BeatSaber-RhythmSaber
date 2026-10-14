@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <AssemblyName>RhythmSaber</AssemblyName>
+    <RootNamespace>RhythmSaber</RootNamespace>
+    <Version>0.1.0</Version>
+    <Nullable>disable</Nullable>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <AutomaticallyUseReferenceAssemblyPackages>false</AutomaticallyUseReferenceAssemblyPackages>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="src\**\*.cs" />
+    <EmbeddedResource Include="manifest.json" LogicalName="RhythmSaber.manifest.json" />
+    <EmbeddedResource Include="UI\settings.bsml" LogicalName="RhythmSaber.UI.settings.bsml" />
+    <Reference Include="$(BeatSaberDir)\Beat Saber_Data\Managed\*.dll" Exclude="$(BeatSaberDir)\Beat Saber_Data\Managed\System*.dll;$(BeatSaberDir)\Beat Saber_Data\Managed\mscorlib.dll;$(BeatSaberDir)\Beat Saber_Data\Managed\netstandard.dll;$(BeatSaberDir)\Beat Saber_Data\Managed\Mono*.dll"><Private>false</Private></Reference>
+    <Reference Include="$(BeatSaberDir)\Libs\0Harmony.dll;$(BeatSaberDir)\Libs\Newtonsoft.Json.dll;$(BeatSaberDir)\Libs\Hive.Versioning.dll;$(BeatSaberDir)\Plugins\BSML.dll;$(BeatSaberDir)\Plugins\SiraUtil.dll;$(BeatSaberDir)\Plugins\BS_Utils.dll"><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>
